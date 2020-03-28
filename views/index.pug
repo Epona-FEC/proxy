@@ -3,16 +3,20 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title Mockup of Etsy Item Page
+    style
+      include style.css
   body
     script.
       window.productId = #{productId};
 
-    #app1 Michael
-    #app2 Ashby
-    #app3 Melvin
-    #app4 Mary
+    div(class='outer-container')
+      div(class='left-side')
+        #app
+        #app3
+      #app2(class='right-side')
+    #app4
 
-    //- script(src='http://localhost:3001/build.js')
+    script(src='http://localhost:3001/bundle.js')
     script(src='http://localhost:3002/bundle.js')
-    //- script(src='http://localhost:3003/bundle.js')
-    //- script(src='http://localhost:3004/bundle.js')
+    script(src='http://localhost:3003/build.js')
+    script(src='http://localhost:3004/bundle.js')
